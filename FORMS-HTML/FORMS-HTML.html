@@ -7,44 +7,49 @@
     <body>
         <h1>Formulário</h1>
         <form action="pagina_de_destino.html" method="POST">
-            <p>
-                <label for="login">Nome:</label>
-                <input type="text" placeholder="Digite seu Nome:" id="login">
-            </p>
+            <section>
+                <h2>Dados Pessoais</h1>
+                <p>
+                    <label for="login">Nome:</label>
+                    <input type="text" placeholder="Digite seu Nome:" id="login">
+                </p>
 
-            <p>
-                <label for="email">E-mail:</label>
-                <input type="text" placeholder="Digite seu E-mail:" id="email">
-            </p>
+                <p>
+                    <label for="email">E-mail:</label>
+                    <input type="text" placeholder="Digite seu E-mail:" id="email">
+                </p>
 
-            <p>
-                <label for="telefone">Telefone:</label> 
-                <input type="text" placeholder="Digite seu Telefone:" id="telefone">
-            </p>
+                <p>
+                    <label for="telefone">Telefone:</label> 
+                    <input type="text" placeholder="Digite seu Telefone:" id="telefone">
+                </p>
+            </section>
 
-            <p>
+            <section>
+                <h2>Dados da Pesquisa</h2>
+                <p>
                 <h3>Estado Civil:</h4>
-                <input type="radio" id="solteiro" name="estado_civil">
-                <label for="solteiro" >Solteiro</label>
-                <input type="radio" id="casado" name="estado_civil">
-                <label for="casado">Casado</label>
-                <input type="radio" id="divorciado" name="estado_civil">
-                <label for="divorciado">Divorciado</label>
-            </p>
-
-            <p>
-                <h3>Genêro:</h4>
-                <input type="radio" id="Homem" name="genero">
-                <label for="Homem" >Homem</label>
-                <input type="radio" id="Mulher" name="genero">
-                <label for="Mulher">Mulher</label>
-                <input type="radio" id="Outro" name="genero">
-                <label for="Outro">Prefiro não responder</label>
-            </p>
-            
-            <p>
-                <h3>Estado:</h3>
-                <select>
+                    <input type="radio" id="solteiro" name="estado_civil">
+                    <label for="solteiro" >Solteiro</label>
+                    <input type="radio" id="casado" name="estado_civil">
+                    <label for="casado">Casado</label>
+                    <input type="radio" id="divorciado" name="estado_civil">
+                    <label for="divorciado">Divorciado</label>
+                </p>
+                
+                <p>
+                    <h3>Genêro:</h4>
+                    <input type="radio" id="Homem" name="genero">
+                    <label for="Homem" >Homem</label>
+                    <input type="radio" id="Mulher" name="genero">
+                    <label for="Mulher">Mulher</label>
+                    <input type="radio" id="Outro" name="genero">
+                    <label for="Outro">Prefiro não responder</label>
+                </p>
+                
+                <p>
+                    <h3>Estado:</h3>
+                    <select>
                     <option>Acre</option>
                     <option>Minas Gerais</option>
                     <option>São Paulo</option>
@@ -59,15 +64,16 @@
                     <option>Alagoas</option>
                     <option>Amazonas</option>
                     <option>Rondonia</option>
-                </select>
-            </p>
-
-            <p>
-                <input type="checkbox" id="termos">
-                <label for="termos">Autorizo compartilhar minhas respostas com terceiros</label>
-            </p>
-
-            <input type="submit" value="Enviar">
+                    </select>
+                </p>
+                    
+                <p>
+                    <input type="checkbox" id="termos">
+                    <label for="termos">Autorizo compartilhar minhas respostas com terceiros</label>
+                </p>
+                
+                <input type="submit" value="Enviar">
+            </section>
         </form>
     </body>
 </html>
