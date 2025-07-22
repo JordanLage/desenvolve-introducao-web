@@ -1,4 +1,12 @@
-/* Paleta de cores
-Fonte: Preto
-Funto : Azul
-Cor destaque: Vermelho/laranja   */
+/* Color Theme Swatches in Hex */
+/* 
+.principal { color: #9CBCD9; }
+.background { color: #022873; }
+.Arquitetura-3-hex { color: #BFCDD9; }
+.Arquitetura-4-hex { color: #0487D9; }
+.destaque { color: #085A8C; } */
+
+html {
+    background: #022873;
+    color: #9cbcd9;
+}
