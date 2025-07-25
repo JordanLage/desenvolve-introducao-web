@@ -1,0 +1,25 @@
+/* Color Theme Swatches in Hex */
+/* 
+.principal { color: #9CBCD9; }
+.background { color: #022873; }
+.Arquitetura-3-hex { color: #BFCDD9; }
+.Arquitetura-4-hex { color: #0487D9; }
+.destaque { color: #085A8C; } */
+
+.page-wrapper {
+  position: relative;
+}
+
+.explanation {
+  width: 60%;
+  margin-right: 35%;
+  border-right: 1px solid #1f295c;
+  padding-right: 2%;
+}
+
+.design-selection {
+  position: absolute;
+  top: 560px;
+  left: 62%;
+  padding: 0 2%;
+}
