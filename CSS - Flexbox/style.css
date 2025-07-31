@@ -1,0 +1,45 @@
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+footer a {
+  flex: 1 1 100px;
+  text-align: center;
+  min-width: 100px;
+}
+
+.requirements,
+.participation {
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+.requirements h3,
+.participation h3 {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.requirements p {
+  width: 70%;
+}
+
+.participation p {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.requirements + .participation {
+  border-top: none;
+}
