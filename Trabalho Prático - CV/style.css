@@ -1,0 +1,137 @@
+
+:root {
+  --cor-principal: #1f2937;        /* Cinza escuro */
+  --cor-secundaria: #4b5563;       /* Cinza */
+  --cor-destaque: #3b82f6;         /* Azul */
+  --cor-fundo: #f9fafb;            /* Branco */
+  --fonte-titulo: 'Segoe UI', sans-serif;
+  --fonte-texto: 'Roboto', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fonte-texto);
+  background-color: var(--cor-fundo);
+  color: var(--cor-principal);
+  line-height: 1.6;
+}
+
+nav {
+  background: var(--cor-principal);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 1rem 0;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--cor-destaque);
+}
+
+header {
+  padding: 6rem 1rem 2rem;
+  text-align: center;
+  background: var(--cor-secundaria);
+  color: white;
+}
+
+header h1 {
+  font-family: var(--fonte-titulo);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+header img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid white;
+  margin-bottom: 1rem;
+}
+
+section {
+  padding: 2rem 1rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  font-family: var(--fonte-titulo);
+  color: var(--cor-destaque);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--cor-destaque);
+  padding-bottom: 0.5rem;
+}
+
+h3 {
+  color: var(--cor-principal);
+  font-size: 1.2rem;
+  margin-top: 1.2rem;
+}
+
+ul {
+  list-style: disc;
+  margin-left: 2rem;
+}
+
+footer {
+  background: var(--cor-principal);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  header, section {
+    padding: 1rem;
+  }
+}
