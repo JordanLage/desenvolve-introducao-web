@@ -1,0 +1,121 @@
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+footer a {
+  flex: 1 1 100px;
+  text-align: center;
+  min-width: 100px;
+  color: #007acc;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #005b99;
+}
+
+footer a:visited {
+  font-weight: normal;
+}
+
+.requirements,
+.participation {
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+.requirements h3,
+.participation h3 {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.requirements p {
+  width: 70%;
+}
+
+.participation p {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.requirements + .participation {
+  border-top: none;
+}
+
+#zen-supporting > .explanation p:first-of-type::first-letter {
+  font-size: 3em;
+  font-family: 'Georgia', serif;
+  float: left;
+  line-height: 1;
+  margin-right: 8px;
+}
+
+#design-selection ul li {
+  border-top: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+#design-selection ul li:last-child {
+  border-bottom: 1px solid #ccc;
+}
+
+@media (max-width: 768px) {
+  aside.sidebar {
+    position: static;
+    border: none;
+  }
+
+  .requirements,
+  .participation {
+    flex-direction: column;
+  }
+
+  .requirements h3,
+  .participation h3,
+  .requirements p,
+  .participation p {
+    width: 100%;
+    text-align: left;
+    padding: 10px 0;
+  }
+
+  header {
+    height: auto;
+  }
+
+  p {
+    text-indent: 0;
+    margin-top: 0;
+  }
+}
+
+@media print {
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    background: white;
+    color: black;
+  }
+
+  header {
+    background-color: white;
+    color: black;
+  }
+
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+}
